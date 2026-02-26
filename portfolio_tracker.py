@@ -7,7 +7,7 @@ stock_prices = {
 
 print("welcome to your stock tracker!")
 symbol = input(
-    "Enter stock symbol (apple, google, amazon, microsoft) : ").upper()
+    "Enter stock symbol (apple, google, amazon, microsoft) : ").lower()
 quantity = int(input("how many shares do you own?:"))
 if symbol in stock_prices:
     price = stock_prices[symbol]
